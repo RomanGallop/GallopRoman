@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background: #f0f0f0;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+div {
+    margin-bottom: 30px;
+    height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+img {
+    width: 96px;
+    margin: 5px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.resultado {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.equipo, .dados {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}

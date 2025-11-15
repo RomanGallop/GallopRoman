@@ -1,0 +1,334 @@
+/* ===== Decoración adicional para el dashboard ===== */
+
+/* Centrar todo el contenido principal */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+  
+}
+
+/* Dashboard header centrado y con fondo */
+.dashboard-header {
+    width: 100%;
+    max-width: 1000px;
+    background: #007BFF;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.dashboard-header h1 {
+    font-size: 22px;
+    margin: 0;
+}
+
+.dashboard-header a {
+    background: #f3e8ff;
+    color: #7c3aed;
+    padding: 8px 18px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    border: 1px solid #e9d5ff;
+    transition: background 0.2s, color 0.2s;
+}
+
+.dashboard-header a:hover {
+    background: #ede9fe;
+    color: #5b21b6;
+}
+
+/* Tarjetas de clases más decoradas */
+.card {
+    width: 100%;
+    max-width: 1000px;
+    background: #f8f9fa;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Fondos para listas de notas y asistencias */
+.card ul {
+    background: #f6f7fb;
+    padding: 10px 12px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+}
+
+.card ul li {
+    padding: 8px 12px;
+    margin-bottom: 4px;
+    background: #fff;
+    border-radius: 7px;
+    border: 1px solid #ececec;
+    font-size: 15px;
+}
+
+/* Formularios centrados y con fondo */
+form {
+    background: #f8fafc;
+    padding: 14px 16px 10px 16px;
+    border-radius: 10px;
+    margin: 14px 0;
+    box-shadow: 0 1px 4px rgba(80, 80, 120, 0.04);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 18px;
+    align-items: center;
+    justify-content: flex-start;
+}
+form label {
+    font-weight: 500;
+    color: #23272f;
+    margin-right: 8px;
+}
+form input, form select {
+    padding: 7px 10px;
+    border-radius: 6px;
+    border: 1px solid #e6e8f0;
+    font-size: 15px;
+    margin-left: 4px;
+    margin-bottom: 0;
+    outline: none;
+    background: #fff;
+    transition: border 0.2s;
+}
+form input:focus, form select:focus {
+    border: 1.2px solid #a5b4fc;
+}
+
+/* Totales con fondo y centrado */
+.totales {
+    background: #f3f4f6;
+    padding: 13px 0 10px 0;
+    border-radius: 10px;
+    margin-top: 14px;
+    text-align: center;
+    box-shadow: 0 1px 4px rgba(80, 80, 120, 0.04);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* Centrar botones */
+button {
+    display: block;
+    width: auto;
+    margin: 10px auto;
+    padding: 10px 24px;
+    font-weight: 500;
+    font-size: 15px;
+    background: #e0e7ff;
+    color: #3730a3;
+    border: 1px solid #c7d2fe;
+    border-radius: 7px;
+    box-shadow: 0 1px 4px rgba(80, 80, 120, 0.04);
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, border 0.2s;
+}
+button:hover {
+    background: #c7d2fe;
+    color: #312e81;
+    border: 1px solid #a5b4fc;
+}
+
+/* Links de clase centrados */
+ul li a {
+    display: block;
+    text-align: center;
+    background: #f3f4f6;
+    padding: 10px;
+    border-radius: 7px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #3730a3;
+    text-decoration: none;
+    font-size: 15px;
+    border: 1px solid #e0e7ef;
+    transition: background 0.2s, color 0.2s, border 0.2s;
+}
+
+ul li a:hover {
+    background: #e0e7ff;
+    color: #312e81;
+    border: 1px solid #c7d2fe;
+}
+
+/* Títulos de secciones con fondo */
+h2,
+h3,
+h4 {
+    padding: 5px 14px;
+    border-radius: 7px;
+    background: #f6f7fb;
+    display: inline-block;
+    font-weight: 500;
+    color: #23272f;
+    margin-bottom: 8px;
+    box-shadow: 0 1px 2px rgba(80, 80, 120, 0.03);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .dashboard-header {
+        flex-direction: column;
+        gap: 10px;
+        padding: 12px 6px;
+    }
+    .card,
+    .dashboard-header {
+        width: 98%;
+    }
+}
+
+/* Clases añadidas para reemplazar estilos inline en dashboard.php */
+.change-links {
+    margin-bottom: 18px;
+    display: flex;
+    gap: 18px;
+}
+.change-link {
+    color: #2563eb;
+    text-decoration: underline;
+    font-weight: 500;
+}
+.student-name {
+    font-weight: 600;
+    color: #23272f;
+    margin-bottom: 10px;
+}
+.period-card {
+    flex: 1 1 220px;
+    min-width: 220px;
+}
+.small-success {
+    margin: 10px 0;
+    padding: 8px 10px;
+    background: #ecfdf5;
+    color: #065f46;
+    border-radius: 8px;
+    border: 1px solid #bbf7d0;
+}
+.note-form label { display:block; margin-bottom:8px; font-weight:500; color:#111827; }
+.note-form input { width:100%; box-sizing:border-box; }
+.alert { padding:10px; border-radius:8px; background:#fff4f4; color:#7f1d1d; border:1px solid #fecaca; }
+.success { padding:8px 10px; background:#ecfdf5; color:#065f46; border-radius:8px; border:1px solid #bbf7d0; }
+
+/* ===== Estilos para la página de Login (index.php) ===== */
+
+.login-container {
+    max-width: 500px;
+    margin-top: 60px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(37, 99, 235, 0.10);
+    padding: 45px 36px 36px 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-title-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.login-title {
+    font-size: 2rem;
+    color: #2563eb;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 1px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.login-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+}
+
+.login-footer {
+    margin-top: 28px;
+    color: #64748b;
+    font-size: 14px;
+    text-align: center;
+}
+
+.login-footer span {
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+/* Ajustes para los helpers de formulario */
+.field {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+}
+
+.input-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #2563eb;
+    font-size: 1.2em;
+    opacity: 0.7;
+}
+
+.input {
+    width: 85%;
+    padding: 12px 1px 12px 40px;
+    border-radius: 8px;
+    border: 1.5px solid #c7d2fe;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.2s;
+}
+
+.input:focus {
+    border-color: #60a5fa;
+}
+
+.btn {
+    margin-top: 10px;
+    width: 100%;
+    max-width: 300px;
+    padding: 12px 0;
+    font-size: 17px;
+    font-weight: 600;
+    background: linear-gradient(90deg, #2563eb 60%, #60a5fa 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #2563eb22;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+* {
+    font-family: 'Segoe UI', arial, sans-serif;
+}
